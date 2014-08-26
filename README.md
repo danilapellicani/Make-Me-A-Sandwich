@@ -1,4 +1,4 @@
-make-me-a-sandwich
+Make-Me-A-Sandwich
 ==================
 
 A tiny web app that generates a random sandwich recipe. 
