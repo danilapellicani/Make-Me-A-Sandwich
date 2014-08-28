@@ -45,49 +45,142 @@
 		video {
 			width: 100%;   
 			height: auto; 
+			display: block;
 		}
 
 		#page {
 			width: 100%;
 		}
 
+		header {
+			background-color: silver;
+			position: relative;
+			overflow: hidden;
+		}
+
+		#logo {
+			margin: 4.5rem auto;
+			display: block;
+			position: relative;
+			max-width: 55%;
+		}
+
+		.collapsed #logo {
+			width: 13%;
+			margin: 0.5rem;
+		}
+
+		#info {
+			padding: 0.5rem;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 15%;
+		}
+
 		button {
 			margin: 2rem auto;
 			display: block;
-			background: yellow;
+			background: white;
 			font-family: 'Open Sans', Arial, Sans Serif;
 			font-size: 1rem;
 			padding: 1rem;
+			border-width: 0.2rem;
+			border-color: black;
+		}
+
+		button:hover{
+			background-color: black;
+			color: white;
 		}
 
 		.wrapper {
 			margin: 0 auto;
 			max-width: 45rem;
 			padding: 0 1.5rem;
-			background-color: cyan;
+			background-color: gainsboro;
+			overflow: hidden;
 		}
 
 		#sandwich {
-			margin: 0 auto;
-			padding: 1rem 0;
+			margin: 2rem auto;
+		}
+
+		#sandwich:empty {
+			margin: 0;
+		}
+
+		.ingredient {
+			padding: 0.25rem;
+			text-align: center;
 		}
 
 		.bread {
 			margin: 0 auto;
-			height: 5rem;
+			padding: 1rem;
 			display: block;
-			background-color: yellow;
+			background-color: peru;
+		}
+
+		.bread[data-key="corn bread"]{
+			background-color: gold;
+		}
+		.bread[data-key="ciabatta bread"]{
+			background-color: navajowhite;
+		}
+		.bread[data-key="rice milk rolls"]{
+			background-color: cornsilk;
 		}
 
 		.sauce {
 			margin: 0 auto;
 			display: block;
 			background-color: lime;
+			
+		}
+
+		.sauce[data-key="hummus"]{
+			background-color: tan;
+			color: white;
+		}
+		.sauce[data-key="honey"]{
+			background-color: darkgoldenrod;
+			color: white;
+		}
+		.sauce[data-key="mustard"]{
+			background-color: sienna;
+			color: white;
 		}
 
 		.main {
 			margin: 0 auto;
 			display: block;
-			background-color: red;
+			background-color: tomato;
+			
+		}
+
+		.main[data-key="salmon"]{
+			background-color: tomato;
+			color: white;
+		}
+		.main[data-key="pumpkin chips"]{
+			background-color: darkorange;
+			color: white;
+		}
+		.main[data-key="camembert"]{
+			background-color: antiquewhite;
+		}
+
+		#recipe {
+			padding-top: 1rem;
+		}
+
+		h1 {
+			font-weight: bold;
+		}
+
+		p {
+			margin-bottom: 2rem;
 		}
 

@@ -4,56 +4,60 @@
 
 	<!--Title -->
 	<title>Make me a sandwich!</title>
-	
+
 	<!-- Meta -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	
+
 	<!-- CSS -->
 	<link href="sandwich.css" rel="stylesheet" type="text/css" />
 
 	<!-- Font -->
 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,600,700,900,300i,400i,600i,700i,900i">
-	
-	<!-- JS -->
-	<script src=""></script>
 
-	
+	<!-- JS -->
+	<script src="chef.js"></script>
+
+
 </head>
 <body>
 	<div id="page">
-		<button>Make me a sandwich</button>
+
+		<!-- Start -->
+		<header class="collapsed"> 
+			<a id="logo" onclick="clearSandwich(); return false" href="#">
+				<img src="http://placekitten.com/g/200/200" alt="logo"/>
+			</a>
+			<a id="info">
+				<img src="info.svg" alt="about"/>
+			</a>
+		</header>
+		<!-- end Start-->
+
 		<div class="wrapper">
-			
-			<div id="sandwich">
-				
-				<div class="bread"> 
-					bread
-				</div>
-				
-				<div class="sauce">
-					sauce
-				</div>
-				
-				<div class="main">
-					main
-				</div>
 
-				<div class="bread"> 
-					bread
-				</div>
+			<div id="sandwich"></div>
 
-			</div>
+<!-- 			<div id="recipe">
+				<h1>BREAD</h1>
+				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
+
+				<h1>MAIN</h1>
+				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
+
+				<h1>SAUCE</h1>
+				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
+			</div> -->
 
 		</div>
 
 
-
+<button onclick="orderSandwich()">Make me a sandwich</button>
 
 
 	</div>
 
 
-	
+
 </body>
 </html>
