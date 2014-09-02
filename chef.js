@@ -121,5 +121,23 @@ function orderSandwich() {
   return sandwich;
 }
 
+// toggle info
+
+$( document ).ready(function() {
+    $("#overlay").toggle();
+    $("#info-toggle").click(function() {
+    $("#overlay").slideToggle();
+  });
+
+  $("#overlay-close").click(function() {
+    $("#overlay").slideToggle();
+  });
+});
+
+
+
+
+
+
 
 

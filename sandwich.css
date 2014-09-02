@@ -70,7 +70,7 @@
 			margin: 0.5rem;
 		}
 
-		#info {
+		#info-toggle {
 			padding: 0.5rem;
 			display: block;
 			position: absolute;
@@ -78,6 +78,30 @@
 			top: 0;
 			width: 15%;
 		}
+
+		#overlay {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: gainsboro;
+		}
+
+		#overlay-close {
+			width: 2rem;
+			height: 2rem;
+			float: right;
+			margin: 1rem;
+			background-color: white;
+		}
+
+		.info {
+			padding: 1rem;
+			float: left;
+			width: 80%;
+		}
+		
 
 		button {
 			margin: 2rem auto;

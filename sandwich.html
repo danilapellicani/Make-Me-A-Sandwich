@@ -16,8 +16,9 @@
 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,600,700,900,300i,400i,600i,700i,900i">
 
 	<!-- JS -->
-	<script src="chef.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+	<script src="chef.js"></script>
 
 </head>
 <body>
@@ -28,36 +29,33 @@
 			<a id="logo" onclick="clearSandwich(); return false" href="#">
 				<img src="http://placekitten.com/g/200/200" alt="logo"/>
 			</a>
-			<a id="info">
+			<a id="info-toggle">
 				<img src="info.svg" alt="about"/>
 			</a>
 		</header>
 		<!-- end Start-->
 
+		<!-- Overlay -->
+			<div id="overlay">
+				<div id="overlay-close"></div>
+			<div class="info">
+				<p>Lorem ipsum dolor sit amet, eros tritani inimicus ius at. Eum id quod officiis luptatum, ius debitis quaestio dignissim ne. Sit in suavitate tincidunt, ea choro nostrum per. Id vel liber utinam vulputate. Sea diam illud option at. At mea bonorum inimicus complectitur. At errem persecuti referrentur eum, vim et alia habemus.</p>
+			</div>
+			
+			
+		</div>
+		<!-- end Overlay -->
+
 		<div class="wrapper">
 
 			<div id="sandwich"></div>
 
-<!-- 			<div id="recipe">
-				<h1>BREAD</h1>
-				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
-
-				<h1>MAIN</h1>
-				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
-
-				<h1>SAUCE</h1>
-				<p>Lorem ipsum dolor sit amet, ne decore commodo vix, vix clita legere aliquando in.</p>
-			</div> -->
 
 		</div>
 
 
-<button onclick="orderSandwich()">Make me a sandwich</button>
-
+		<button onclick="orderSandwich()">Make me a sandwich</button>
 
 	</div>
-
-
-
-</body>
-</html>
+	</body>
+	</html>
