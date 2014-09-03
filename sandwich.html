@@ -21,15 +21,16 @@
 	<script src="chef.js"></script>
 
 </head>
+
 <body>
 	<div id="page">
 
 		<!-- Start -->
-		<header class="collapsed"> 
-			<a id="logo" onclick="clearSandwich(); return false" href="#">
+		<header class="top"> 
+			<a class="logo" onclick="clearSandwich(); return false" href="#">
 				<img src="http://placekitten.com/g/200/200" alt="logo"/>
 			</a>
-			<a id="info-toggle">
+			<a class="info-toggle">
 				<img src="info.svg" alt="about"/>
 			</a>
 		</header>
@@ -54,7 +55,7 @@
 		</div>
 
 
-		<button onclick="orderSandwich()">Make me a sandwich</button>
+		<button class="make-sandwich">Make me a sandwich</button>
 
 	</div>
 	</body>

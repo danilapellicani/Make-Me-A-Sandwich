@@ -124,14 +124,23 @@ function orderSandwich() {
 // toggle info
 
 $( document ).ready(function() {
+  // toggle info
     $("#overlay").toggle();
-    $("#info-toggle").click(function() {
+    $(".info-toggle").click(function() {
     $("#overlay").slideToggle();
   });
 
   $("#overlay-close").click(function() {
     $("#overlay").slideToggle();
   });
+
+  //minimize nav
+$(".make-sandwich").click(function() {
+  $(".logo").addClass("logo-minimize");
+  //order sandwich
+  orderSandwich();
+});
+
 });
 
 

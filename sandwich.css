@@ -52,26 +52,30 @@
 			width: 100%;
 		}
 
-		header {
+		.top {
 			background-color: silver;
 			position: relative;
 			overflow: hidden;
+  			width: 100%;
+  			padding: 0;
 		}
 
-		#logo {
-			margin: 4.5rem auto;
-			display: block;
-			position: relative;
-			max-width: 55%;
-		}
+  		.logo {
+  			margin: 4.5rem auto;
+  			display: block;
+  			position: relative;
+  			max-width: 55%;
+  		}
 
-		.collapsed #logo {
-			width: 13%;
-			margin: 0.5rem;
-		}
+  		.logo-minimize {
+  			margin: 0.5rem 0.5rem;
+  			display: block;
+  			position: relative;
+  			max-width: 15%;
+  		}
 
-		#info-toggle {
-			padding: 0.5rem;
+		.info-toggle {
+			padding: 1rem 0.5rem;
 			display: block;
 			position: absolute;
 			right: 0;
@@ -91,15 +95,17 @@
 		#overlay-close {
 			width: 2rem;
 			height: 2rem;
-			float: right;
-			margin: 1rem;
+			margin: 1rem 0.5rem;
 			background-color: white;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 
 		.info {
 			padding: 1rem;
-			float: left;
-			width: 80%;
+			width: 100%;
+			margin-top: 3rem;
 		}
 		
 
@@ -206,5 +212,7 @@
 
 		p {
 			margin-bottom: 2rem;
+			line-height: 1.5rem;
+			font-size: 0.95rem;
 		}
 
