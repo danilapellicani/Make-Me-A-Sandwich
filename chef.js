@@ -129,16 +129,21 @@ $( document ).ready(function() {
     $(".info-toggle").click(function() {
     $("#overlay").slideToggle();
   });
-
+  // overaly close
   $("#overlay-close").click(function() {
     $("#overlay").slideToggle();
   });
-
-  //minimize nav
+  // minimize logo
 $(".make-sandwich").click(function() {
   $(".logo").addClass("logo-minimize");
-  //order sandwich
+  // order sandwich
   orderSandwich();
+});
+  // clear sandwich maximize logo
+$(".logo").click(function() {
+  $(".logo").removeClass("logo-minimize");
+  // order sandwich
+  clearSandwich();
 });
 
 });
