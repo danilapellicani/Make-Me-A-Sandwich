@@ -133,11 +133,11 @@
 			overflow: hidden;
 		}
 
-		#sandwich {
+		#JSsandwich {
 			margin: 2rem auto;
 		}
 
-		#sandwich:empty {
+		#JSsandwich:empty {
 			margin: 0;
 		}
 
@@ -202,9 +202,51 @@
 			background-color: antiquewhite;
 		}
 
-		#recipe {
-			padding-top: 1rem;
+		#JSrecipe {
+			margin: 2rem auto;
+			background-color: tomato;
 		}
+
+		#JSrecipe:empty {
+			margin: 0;
+		}
+
+		.recipe {
+			padding: 0.25rem;
+			text-align: left;
+			background-color: white;
+		}
+
+	/*	.bread {
+			margin: 0 auto;
+			padding: 1rem;
+			display: block;
+			
+		}
+
+		.sauce {
+			margin: 0 auto;
+			display: block;
+			padding: 1rem;
+			
+		}
+
+		.main {
+			margin: 0 auto;
+			display: block;
+			padding: 1rem;
+			
+		}*/
+
+
+
+
+
+
+
+
+
+
 
 		h1 {
 			font-weight: bold;
